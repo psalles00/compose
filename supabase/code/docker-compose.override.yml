@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  analytics:
+    image: alpine:3.20
+    command: ["sh", "-c", "sleep infinity"]
+    healthcheck:
+      test: ["CMD", "true"]
+
+  vector:
+    image: alpine:3.20
+    command: ["sh", "-c", "sleep infinity"]
+    healthcheck:
+      test: ["CMD", "true"]
